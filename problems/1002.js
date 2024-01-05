@@ -1,10 +1,14 @@
 export function problem (lines){
-    const A = lines[0]
-    const B = lines[1]
+    let n = 3.14159
+    let raio = lines[0]
+    let Aoriginal = n * Math.pow(raio, 2)
+    let A = parseFloat(Aoriginal.toFixed(4))
 
-    const X = Number(A) + Number(B)
-    
-    console.log(`X =${X}`)
+
+
+
+    console.log(`A=${A}`)
+
 }
 
 
