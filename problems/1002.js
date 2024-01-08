@@ -1,13 +1,9 @@
 export function problem (lines){
-    let n = 3.14159
-    let raio = lines[0]
-    let Aoriginal = n * Math.pow(raio, 2)
-    let A = parseFloat(Aoriginal.toFixed(4))
+    let pi = 3.14159
+    let raio = Number(lines[0])
+    const area = pi * raio **2
 
-
-
-
-    console.log(`A=${A}`)
+    console.log(`A=${area.toFixed(4)}`)
 
 }
 
