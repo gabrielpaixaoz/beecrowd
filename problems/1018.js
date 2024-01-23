@@ -16,7 +16,7 @@ export function problem (lines){
         return listaNotas
     }
 
-    function mostr
+    
 
     console.log(valorTotal)
     console.log(`${valorTotal} nota(s) de R$ 100,00`)
