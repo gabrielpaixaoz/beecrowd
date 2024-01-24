@@ -16,8 +16,15 @@ export function problem (lines){
         return listaNotas
     }
 
-    
+    function mostrarNotasNecessarias (valor, notas){
+        const notasNecessarias = quantidadesPorNota(valor, notas)
 
-    console.log(valorTotal)
-    console.log(`${valorTotal} nota(s) de R$ 100,00`)
+        console.log(valor)
+
+        notasNecessarias.forEach(({quantidade, nota})=>{
+            console.log(`${quantidade} nota(s) de R$ ${nota},00`)
+        }) 
+    }
+
+    mostrarNotasNecessarias(valorTotal, notasDisponiveis)
 }
