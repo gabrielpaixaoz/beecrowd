@@ -10,7 +10,7 @@ const dimensoes = [
         return item.altura * item.comprimento
     }
 
-    let teste = soma.reduce((total,valor) => total + valor, 0);
+    let somatotal = soma.reduce((total,valor) => total + valor, 0);
 
 
-console.log(teste)
+console.log(somatotal)
