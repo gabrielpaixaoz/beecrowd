@@ -1,8 +1,34 @@
 export function problem (lines){
-    const valorTotal = lines[0]
-    const notasDisponiveis = [100, 50, 20, 10, 5, 2, 1]
+    let valor = lines[0]
+    let notas = [100, 50, 20, 10, 5, 2, 1]
 
-    function quantidadeNotas(valor, nota){
+    console.log(valor)
+
+    notas.forEach(divisionCedules);
+
+    function divisionCedules(nota){
+        let qtdNotas = parseInt(valor/nota);
+        console.log(`${qtdNotas} nota(s) de R$ ${nota},00`)
+        valor = valor % nota
+    }
+
+
+
+}
+
+/* for (let nota of notas){
+    let qtdNotas= parseInt(valor/nota);
+    console.log(`${qtdNotas} notas(s) de ${nota},00`)
+    valor = valor % nota;
+} */
+
+
+
+
+
+
+
+    /* function quantidadeNotas(valor, nota){
         const quantidade = Math.floor(valor /nota)
         return quantidade
     }
@@ -27,4 +53,5 @@ export function problem (lines){
     }
 
     mostrarNotasNecessarias(valorTotal, notasDisponiveis)
-}
+} 
+*/
