@@ -1,7 +1,47 @@
 export function problem (lines){
     let valor = lines[0]
-    let notas = [100, 50, 20, 10, 5, 2, 1]
+    const notas = [100, 50, 20, 10, 5, 2, 1]
 
+    console.log(valor)
+
+    notas.forEach(cedulas)
+
+    function cedulas(nota){
+        let qtdNotas = parseInt(valor/nota);
+        console.log(`${qtdNotas} nota(s) de R$ ${nota},00`)
+        valor = valor % nota
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
     console.log(valor)
 
     notas.forEach(divisionCedules);
@@ -16,7 +56,7 @@ export function problem (lines){
 
 }
 
-/* for (let nota of notas){
+ for (let nota of notas){
     let qtdNotas= parseInt(valor/nota);
     console.log(`${qtdNotas} notas(s) de ${nota},00`)
     valor = valor % nota;
