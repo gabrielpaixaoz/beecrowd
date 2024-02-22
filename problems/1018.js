@@ -10,7 +10,10 @@ export function problem (lines){
         let qtdNotas = parseInt(valor/nota);
         console.log(`${qtdNotas} nota(s) de R$ ${nota},00`)
         valor = valor % nota
+        return valor
     }
+
+    console.log(valor)
 }
 
 
