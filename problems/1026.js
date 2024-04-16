@@ -1,7 +1,8 @@
 export function problem (lines){
     let numeros = lines[0].split(' ')
+    let mediaExame = parseFloat(lines[1])
+    let mediaFinal
     
-   
     let numerosN = numeros.map(numero => parseFloat(numero))
 
 
@@ -16,6 +17,16 @@ export function problem (lines){
         console.log("Aluno Reprovado.")
     }else if(media >= 5 && media <= 6.9){
         console.log("Aluno em Exame.")
+        console.log(`Nota do exame: ${mediaExame}`)
+        mediaFinal = (mediaExame + media)/2
+        if(mediaFinal >= 5.0){
+            console.log(`Aluno aprovado.`)
+        }else{
+            console.log(`Aluno reprovado.`)
+        }
+        console.log(`Media final: ${mediaFinal}`)
     }
 
+    console.log(mediaFinal)
+    console.log(mediaExame)
 }
