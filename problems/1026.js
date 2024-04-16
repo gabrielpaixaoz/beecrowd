@@ -9,11 +9,13 @@ export function problem (lines){
     
     let media = mediaP / 10
 
+    console.log(`Media: ${media.toFixed(1)}`)
+    if(media >= 7){
+        console.log("Aluno Aprovado.")
+    }else if(media < 5.0){
+        console.log("Aluno Reprovado.")
+    }else if(media >= 5 && media <= 6.9){
+        console.log("Aluno em Exame.")
+    }
 
-    // 2 3 4 1
-
- 4 + 9 + 16 + 8
-
-    console.log(numerosN)
-    console.log(media.toFixed(1))
 }
