@@ -12,18 +12,18 @@ export function problem (lines){
 
     console.log(`Media: ${media.toFixed(1)}`)
     if(media >= 7){
-        console.log("Aluno Aprovado.")
+        console.log("Aluno aprovado.")
     }else if(media < 5.0){
-        console.log("Aluno Reprovado.")
+        console.log("Aluno reprovado.")
     }else if(media >= 5 && media <= 6.9){
-        console.log("Aluno em Exame.")
-        console.log(`Nota do exame: ${mediaExame}`)
+        console.log("Aluno em exame.")
+        console.log(`Nota do exame: ${mediaExame.toFixed(1)}`)
         mediaFinal = (mediaExame + media)/2
         if(mediaFinal >= 5.0){
-            console.log(`Aluno Aprovado.`)
+            console.log(`Aluno aprovado.`)
         }else{
-            console.log(`Aluno Reprovado.`)
+            console.log(`Aluno reprovado.`)
         }
-        console.log(`Media final: ${mediaFinal}`)
+        console.log(`Media final: ${mediaFinal.toFixed(1)}`)
     }
 }
