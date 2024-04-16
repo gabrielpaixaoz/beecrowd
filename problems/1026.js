@@ -20,13 +20,10 @@ export function problem (lines){
         console.log(`Nota do exame: ${mediaExame}`)
         mediaFinal = (mediaExame + media)/2
         if(mediaFinal >= 5.0){
-            console.log(`Aluno aprovado.`)
+            console.log(`Aluno Aprovado.`)
         }else{
-            console.log(`Aluno reprovado.`)
+            console.log(`Aluno Reprovado.`)
         }
         console.log(`Media final: ${mediaFinal}`)
     }
-
-    console.log(mediaFinal)
-    console.log(mediaExame)
 }
