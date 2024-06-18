@@ -1,3 +1,4 @@
+export function problem (lines){
 let posicoes_new = posicoes.map(posicao => parseFloat(posicao))
 
     let posicaoX = posicoes_new[0]
@@ -25,3 +26,4 @@ let posicoes_new = posicoes.map(posicao => parseFloat(posicao))
     else if(posicaoX == 0 && posicaoY == 0){
         console.log("Origem")
     }
+}
