@@ -15,3 +15,4 @@ console.log(Object.getPrototypeOf(arr));
 
 console.log(Object.getPrototypeOf(arr) === Array.prototype);
 
+//apenas em navegador
