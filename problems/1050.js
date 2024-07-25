@@ -9,7 +9,7 @@ export function problem(lines){
             }
         }
 
-        for(let i = 0; i <= numeros_pares.length; i++){
+        for(let i = 0; i <= numeros_pares.length - 1; i++){
             console.log(`${numeros_pares[i]}^2 = ${numeros_pares[i] * numeros_pares[i]}`)
         }
     }
